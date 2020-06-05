@@ -1,0 +1,666 @@
+$font-family1: 'Catamaran', sans-serif;
+
+$colorforp: grey;
+
+$fontsizeforp: 20px;
+$fontsizeforp2: 25px;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@mixin flexy{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin sm {
+    @media (max-width: 576px) {
+        @content;
+    }
+ }
+ 
+ // Medium devices
+ @mixin md {
+    @media (max-width: 768px) {
+        @content;
+    }
+ }
+ 
+ // Large devices
+ @mixin lg {
+    @media (max-width: 992px) {
+        @content;
+    }
+ }
+ 
+ // Extra large devices
+ @mixin xl {
+    @media (max-width: 1200px) {
+        @content;
+    }
+ }
+
+@mixin for-bg($size, $position, $repeat, $attachment){
+    background-size: $size;
+    background-position: $position;
+    background-repeat: $repeat;
+    background-attachment: $attachment;
+}
+
+html, body{
+    scroll-behavior: smooth;
+}
+
+body{
+    height: 19000px;
+    // background: rgb(24, 24, 24);
+    background: black;
+}
+
+.nav{
+    height: 6vh;
+    background: rgb(24, 24, 24);
+
+    .navitems{
+
+        .navlist{
+            list-style-type: none;
+            margin: 10px;
+            @include flexy;
+            justify-content: space-around;
+
+            li{
+                font-size: 13px;
+                display: inline-block;
+                color: white;
+
+                a{
+                    text-decoration: none;
+                    color: white;
+
+                    &:hover{
+                        color: lightslategray;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+.hero{
+    @include flexy;
+    margin-top: 2%;
+
+    .jumbotron{
+        background: rgba(0,0,0,0);
+        @include flexy;
+        flex-direction: column;
+
+        h1{
+            font-family: $font-family1;
+            font-size: 70px;
+            color: white;
+            margin: 5px;
+        }
+
+        h3{
+            margin-top: 10px;
+            color: white;
+        }
+
+        p{
+            margin-top: 10px;
+            font-size: $fontsizeforp;
+            color: $colorforp;
+        }
+
+        button{
+            margin-top: 10px;
+            border-radius: 15px;
+            font-family: $font-family1;
+            border:1px solid white;
+        }
+
+        a{
+            margin-top: 20px;
+        }
+    }
+}
+
+
+.iphoneimg{
+    height: 90vh;
+    background: url('/images/iwater.jpg');
+    @include for-bg(cover, center, no-repeat, none); 
+}
+
+
+.content1{
+    margin-top: 3%;
+    @include flexy;
+    flex-direction: column;
+    background: black;
+    border-radius: 8px;
+    padding: 5%;
+
+    h1{
+        font-size: 90px;
+        font-family: $font-family1;
+        color: white;
+    }
+
+    p{
+        margin: 10px;
+        font-size: $fontsizeforp2;
+        color:$colorforp;
+        text-align: center;
+    }
+
+    ul{
+        list-style-type: none;
+
+        li{
+            display: inline-block;
+            margin-top: 30px;
+            
+            a{
+                color: white;
+                font-family: $font-family1;
+                margin:20px 50px 0px 20px;    
+            }
+        }
+    }
+}
+
+
+
+.gridone{
+    height: 70vh;
+    width: 90%;
+    margin-top: 3%;
+    border-radius: 8px;
+    background: black;
+
+    .row{
+        height: 70vh;
+
+        .col1{
+            background: url('/images/grid11.jpg');
+            @include for-bg(contain, center, no-repeat, none);
+        }
+        
+        .col2{
+            background: url('/images/grid3.jpg');
+            @include for-bg(contain, center, no-repeat, fixed);
+        }
+
+        .col3{
+            background: url('/images/grid2.jpg');
+            @include for-bg(contain, center, no-repeat, none);
+        }
+    }
+}
+
+
+
+
+.gridtwo{
+    height: 60vh;
+    width: 90%;
+    margin-top: 7%;
+    border-radius: 8px;
+    background: black;
+
+    .row{
+        height: 60vh;
+
+        .col1{
+            padding: 5%;
+
+            h2{
+                font-size: 60px;
+                font-family: $font-family1;
+                color: white;
+            }
+            p{
+                margin: 20px 0px 20px 0px;
+                color: white;
+                font-size: $fontsizeforp;
+            }
+            button{
+                font-family: $font-family1;
+                border:1px solid white;
+                border-radius: 12px;
+                margin-top: 10px;
+            }
+
+        }
+        
+        .col2{
+            background: url('/images/closer.jpg');
+            @include for-bg(cover, center, no-repeat, none);
+        }
+
+    }
+}
+
+
+.content2{
+    height: 100vh;
+    margin-top: 7%;
+    background: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)),url('/images/icam.jpg');
+    @include for-bg(cover, center, no-repeat, fixed);
+    @include flexy;
+
+    h1{
+        font-size: 90px;
+        font-family: $font-family1;
+        color: white;
+    }
+}
+
+
+.content3{
+    height: auto;
+    margin-top: 3%;
+    // background: black;
+    border-radius: 8px;
+    @include flexy;
+
+    p{
+        font-size: $fontsizeforp2;
+        color: white;
+        text-align: justify;
+        padding: 5%;
+    } 
+}
+
+
+.gridthree{
+    height: 70vh;
+    width: 90%;
+    margin-top: 4%;
+    // border-radius: 8px;
+    background: black;
+
+    .row{
+        height: 70vh;
+
+        .col1{
+            padding: 5%;
+            @include flexy;
+            flex-direction: column;
+
+            h2{
+                font-size: 45px;
+                font-family: $font-family1;
+                color: white;
+            }
+            p{
+                margin: 30px 0px 20px 0px;
+                color: $colorforp;
+                font-size: $fontsizeforp;
+            }
+            button{
+                font-family: $font-family1;
+                border:1px solid white;
+                border-radius: 12px;
+                margin-top: 10px;
+            }
+
+        }
+        
+        .col2{
+            background: url('/images/lens1.jpg');
+            @include for-bg(contain, center, no-repeat, none);
+        }
+
+    }
+}
+
+
+.gridfour{
+    height: 70vh;
+    width: 90%;
+    // margin-top: 4%;
+    // border-radius: 8px;
+    background: black;
+
+    .row{
+        height: 70vh;
+
+        .col1{
+            padding: 5%;
+            @include flexy;
+            flex-direction: column;
+
+            h2{
+                font-size: 45px;
+                font-family: $font-family1;
+                color: white;
+            }
+            p{
+                margin: 30px 0px 20px 0px;
+                color: $colorforp;
+                font-size: $fontsizeforp;
+            }
+            button{
+                font-family: $font-family1;
+                border:1px solid white;
+                border-radius: 12px;
+                margin-top: 10px;
+            }
+
+        }
+        
+        .col2{
+            background: url('/images/lens2.jpg');
+            @include for-bg(contain, center, no-repeat, none);
+        }
+
+    }
+}
+
+
+.gridfive{
+    height: 70vh;
+    width: 90%;
+    // margin-top: 4%;
+    // border-radius: 8px;
+    background: black;
+
+    .row{
+        height: 70vh;
+
+        .col1{
+            padding: 5%;
+            @include flexy;
+            flex-direction: column;
+
+            h2{
+                font-size: 45px;
+                font-family: $font-family1;
+                color: white;
+            }
+            p{
+                margin: 30px 0px 20px 0px;
+                color: $colorforp;
+                font-size: $fontsizeforp;
+            }
+            button{
+                font-family: $font-family1;
+                border:1px solid white;
+                border-radius: 12px;
+                margin-top: 10px;
+            }
+
+        }
+        
+        .col2{
+            background: url('/images/lens3.jpg');
+            @include for-bg(contain, center, no-repeat, none);
+        }
+
+    }
+}
+
+
+
+.content4{
+width: 100%;
+
+    .container{
+        width: 70%;
+        padding: 4%;
+
+        p{
+            text-align: justify;
+            font-size:$fontsizeforp2;
+            color: white; 
+        }
+    
+    }
+
+    .container-fluid{
+        // height: 60vh;
+        width: 100%;
+        background: black;
+        margin-top: 2%;
+        @include flexy;
+
+        img{
+            margin: 3%;
+            width: 60%;
+        }
+    }
+}
+
+
+#myvideo{
+   width: 100%;
+   position: absolute;
+}
+
+.vidcontent{
+    position: relative;
+    margin:12% 0% 0% 10%;
+    // background: rgba(0,0,0,0.3);
+    width: 60%;
+
+    h1{
+        font-family: $font-family1;
+        font-size: 70px;
+        color: white;
+    }
+
+    p{
+        margin-top: 25px;
+        font-size: $fontsizeforp;
+        color: $colorforp;
+        text-align: justify;
+    }
+}
+
+
+
+.content5{
+    width: 100%;
+    margin-top: 15%;
+    @include flexy;
+
+
+        .container{
+            width: 70%;
+            padding: 4%;
+
+            h1{
+                font-size: 70px;
+                font-family: $font-family1;
+                color: white;
+            }
+    
+            p{
+                text-align: justify;
+                font-size:$fontsizeforp;
+                color: white; 
+                margin-top: 15px;
+            }
+        
+        }
+
+        img{
+            width: 90%;
+        }
+    
+    }
+
+
+
+.content6{
+    width: 100%;
+    margin-top: 5%;
+
+        .cont6txt{
+            width: 75%;
+            padding: 4%;
+
+            h1{
+                font-size: 70px;
+                font-family: $font-family1;
+                color: white;
+            }
+    
+            p{
+                text-align: justify;
+                font-size:$fontsizeforp;
+                color: white; 
+                margin-top: 15px;
+            }
+        
+        }
+
+       .cont6imgs{
+           @include flexy;
+           padding: 5%;
+
+            img{
+                width: 70%;
+            }
+       }
+    
+    }
+
+
+.content7{
+    width: 100%;
+    margin-top: 4%;
+
+        .cont7txt{
+            width: 75%;
+            padding: 4%;
+
+            h1{
+                font-size: 70px;
+                font-family: $font-family1;
+                color: white;
+            }
+    
+            p{
+                text-align: justify;
+                font-size:$fontsizeforp;
+                color: white; 
+                margin-top: 15px;
+            }
+        
+        }
+
+       .cont7imgs{
+           @include flexy;
+           padding: 2%;
+
+            img{
+                width: 90%;
+            }
+
+            p{
+                color: white;
+            }
+       }
+    
+}
+
+
+.content8{
+    width: 100%;
+    margin-top: 15%;
+    @include flexy;
+
+
+        .container{
+            width: 70%;
+            padding: 4%;
+
+            h1{
+                font-size: 60px;
+                font-family: $font-family1;
+                color: white;
+            }
+    
+            p{
+                text-align: justify;
+                font-size:$fontsizeforp;
+                color: white; 
+                margin-top: 20px;
+            }
+        
+        }
+
+        img{
+            width: 90%;
+        }
+    
+    }
+
+
+.content9{
+    width: 75%;
+    margin-top: 5%;
+    padding: 2%;
+
+    h1{
+        margin: 20px;
+        font-size: 60px;
+        font-family: $font-family1;
+        color: white;
+        text-align: center;
+    }
+
+    .firstr{
+        margin-top: 5%;
+        padding: 5%;
+
+        .col{
+            @include flexy;
+            flex-direction: column;
+
+            h2{
+                font-size: 55px;
+                font-family: $font-family1;
+                color: white;
+            }
+            p{
+                text-align: center;
+                font-size:$fontsizeforp;
+                color: $colorforp; 
+                margin-top: 5px;
+            }
+        }
+    }
+
+    .secondr{
+        // margin-top: 5%;
+        padding: 5%;
+        
+        .col{
+            @include flexy;
+            flex-direction: column;
+            
+            h2{
+                font-size: 55px;
+                font-family: $font-family1;
+                color: white;
+            }
+            p{
+                text-align: center;
+                font-size:$fontsizeforp;
+                color: $colorforp; 
+                margin-top: 5px;
+            }
+        }
+    }
+}

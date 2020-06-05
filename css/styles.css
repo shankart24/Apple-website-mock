@@ -1,0 +1,754 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html, body {
+  scroll-behavior: smooth;
+}
+
+body {
+  height: 19000px;
+  background: black;
+}
+
+.nav {
+  height: 6vh;
+  background: #181818;
+}
+
+.nav .navitems .navlist {
+  list-style-type: none;
+  margin: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.nav .navitems .navlist li {
+  font-size: 13px;
+  display: inline-block;
+  color: white;
+}
+
+.nav .navitems .navlist li a {
+  text-decoration: none;
+  color: white;
+}
+
+.nav .navitems .navlist li a:hover {
+  color: lightslategray;
+}
+
+.hero {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 2%;
+}
+
+.hero .jumbotron {
+  background: rgba(0, 0, 0, 0);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.hero .jumbotron h1 {
+  font-family: "Catamaran", sans-serif;
+  font-size: 70px;
+  color: white;
+  margin: 5px;
+}
+
+.hero .jumbotron h3 {
+  margin-top: 10px;
+  color: white;
+}
+
+.hero .jumbotron p {
+  margin-top: 10px;
+  font-size: 20px;
+  color: grey;
+}
+
+.hero .jumbotron button {
+  margin-top: 10px;
+  border-radius: 15px;
+  font-family: "Catamaran", sans-serif;
+  border: 1px solid white;
+}
+
+.hero .jumbotron a {
+  margin-top: 20px;
+}
+
+.iphoneimg {
+  height: 90vh;
+  background: url("/images/iwater.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: none;
+}
+
+.content1 {
+  margin-top: 3%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: black;
+  border-radius: 8px;
+  padding: 5%;
+}
+
+.content1 h1 {
+  font-size: 90px;
+  font-family: "Catamaran", sans-serif;
+  color: white;
+}
+
+.content1 p {
+  margin: 10px;
+  font-size: 25px;
+  color: grey;
+  text-align: center;
+}
+
+.content1 ul {
+  list-style-type: none;
+}
+
+.content1 ul li {
+  display: inline-block;
+  margin-top: 30px;
+}
+
+.content1 ul li a {
+  color: white;
+  font-family: "Catamaran", sans-serif;
+  margin: 20px 50px 0px 20px;
+}
+
+.gridone {
+  height: 70vh;
+  width: 90%;
+  margin-top: 3%;
+  border-radius: 8px;
+  background: black;
+}
+
+.gridone .row {
+  height: 70vh;
+}
+
+.gridone .row .col1 {
+  background: url("/images/grid11.jpg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: none;
+}
+
+.gridone .row .col2 {
+  background: url("/images/grid3.jpg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.gridone .row .col3 {
+  background: url("/images/grid2.jpg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: none;
+}
+
+.gridtwo {
+  height: 60vh;
+  width: 90%;
+  margin-top: 7%;
+  border-radius: 8px;
+  background: black;
+}
+
+.gridtwo .row {
+  height: 60vh;
+}
+
+.gridtwo .row .col1 {
+  padding: 5%;
+}
+
+.gridtwo .row .col1 h2 {
+  font-size: 60px;
+  font-family: "Catamaran", sans-serif;
+  color: white;
+}
+
+.gridtwo .row .col1 p {
+  margin: 20px 0px 20px 0px;
+  color: white;
+  font-size: 20px;
+}
+
+.gridtwo .row .col1 button {
+  font-family: "Catamaran", sans-serif;
+  border: 1px solid white;
+  border-radius: 12px;
+  margin-top: 10px;
+}
+
+.gridtwo .row .col2 {
+  background: url("/images/closer.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: none;
+}
+
+.content2 {
+  height: 100vh;
+  margin-top: 7%;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0.2))), url("/images/icam.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("/images/icam.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.content2 h1 {
+  font-size: 90px;
+  font-family: "Catamaran", sans-serif;
+  color: white;
+}
+
+.content3 {
+  height: auto;
+  margin-top: 3%;
+  border-radius: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.content3 p {
+  font-size: 25px;
+  color: white;
+  text-align: justify;
+  padding: 5%;
+}
+
+.gridthree {
+  height: 70vh;
+  width: 90%;
+  margin-top: 4%;
+  background: black;
+}
+
+.gridthree .row {
+  height: 70vh;
+}
+
+.gridthree .row .col1 {
+  padding: 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.gridthree .row .col1 h2 {
+  font-size: 45px;
+  font-family: "Catamaran", sans-serif;
+  color: white;
+}
+
+.gridthree .row .col1 p {
+  margin: 30px 0px 20px 0px;
+  color: grey;
+  font-size: 20px;
+}
+
+.gridthree .row .col1 button {
+  font-family: "Catamaran", sans-serif;
+  border: 1px solid white;
+  border-radius: 12px;
+  margin-top: 10px;
+}
+
+.gridthree .row .col2 {
+  background: url("/images/lens1.jpg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: none;
+}
+
+.gridfour {
+  height: 70vh;
+  width: 90%;
+  background: black;
+}
+
+.gridfour .row {
+  height: 70vh;
+}
+
+.gridfour .row .col1 {
+  padding: 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.gridfour .row .col1 h2 {
+  font-size: 45px;
+  font-family: "Catamaran", sans-serif;
+  color: white;
+}
+
+.gridfour .row .col1 p {
+  margin: 30px 0px 20px 0px;
+  color: grey;
+  font-size: 20px;
+}
+
+.gridfour .row .col1 button {
+  font-family: "Catamaran", sans-serif;
+  border: 1px solid white;
+  border-radius: 12px;
+  margin-top: 10px;
+}
+
+.gridfour .row .col2 {
+  background: url("/images/lens2.jpg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: none;
+}
+
+.gridfive {
+  height: 70vh;
+  width: 90%;
+  background: black;
+}
+
+.gridfive .row {
+  height: 70vh;
+}
+
+.gridfive .row .col1 {
+  padding: 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.gridfive .row .col1 h2 {
+  font-size: 45px;
+  font-family: "Catamaran", sans-serif;
+  color: white;
+}
+
+.gridfive .row .col1 p {
+  margin: 30px 0px 20px 0px;
+  color: grey;
+  font-size: 20px;
+}
+
+.gridfive .row .col1 button {
+  font-family: "Catamaran", sans-serif;
+  border: 1px solid white;
+  border-radius: 12px;
+  margin-top: 10px;
+}
+
+.gridfive .row .col2 {
+  background: url("/images/lens3.jpg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: none;
+}
+
+.content4 {
+  width: 100%;
+}
+
+.content4 .container {
+  width: 70%;
+  padding: 4%;
+}
+
+.content4 .container p {
+  text-align: justify;
+  font-size: 25px;
+  color: white;
+}
+
+.content4 .container-fluid {
+  width: 100%;
+  background: black;
+  margin-top: 2%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.content4 .container-fluid img {
+  margin: 3%;
+  width: 60%;
+}
+
+#myvideo {
+  width: 100%;
+  position: absolute;
+}
+
+.vidcontent {
+  position: relative;
+  margin: 12% 0% 0% 10%;
+  width: 60%;
+}
+
+.vidcontent h1 {
+  font-family: "Catamaran", sans-serif;
+  font-size: 70px;
+  color: white;
+}
+
+.vidcontent p {
+  margin-top: 25px;
+  font-size: 20px;
+  color: grey;
+  text-align: justify;
+}
+
+.content5 {
+  width: 100%;
+  margin-top: 15%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.content5 .container {
+  width: 70%;
+  padding: 4%;
+}
+
+.content5 .container h1 {
+  font-size: 70px;
+  font-family: "Catamaran", sans-serif;
+  color: white;
+}
+
+.content5 .container p {
+  text-align: justify;
+  font-size: 20px;
+  color: white;
+  margin-top: 15px;
+}
+
+.content5 img {
+  width: 90%;
+}
+
+.content6 {
+  width: 100%;
+  margin-top: 5%;
+}
+
+.content6 .cont6txt {
+  width: 75%;
+  padding: 4%;
+}
+
+.content6 .cont6txt h1 {
+  font-size: 70px;
+  font-family: "Catamaran", sans-serif;
+  color: white;
+}
+
+.content6 .cont6txt p {
+  text-align: justify;
+  font-size: 20px;
+  color: white;
+  margin-top: 15px;
+}
+
+.content6 .cont6imgs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 5%;
+}
+
+.content6 .cont6imgs img {
+  width: 70%;
+}
+
+.content7 {
+  width: 100%;
+  margin-top: 4%;
+}
+
+.content7 .cont7txt {
+  width: 75%;
+  padding: 4%;
+}
+
+.content7 .cont7txt h1 {
+  font-size: 70px;
+  font-family: "Catamaran", sans-serif;
+  color: white;
+}
+
+.content7 .cont7txt p {
+  text-align: justify;
+  font-size: 20px;
+  color: white;
+  margin-top: 15px;
+}
+
+.content7 .cont7imgs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2%;
+}
+
+.content7 .cont7imgs img {
+  width: 90%;
+}
+
+.content7 .cont7imgs p {
+  color: white;
+}
+
+.content8 {
+  width: 100%;
+  margin-top: 15%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.content8 .container {
+  width: 70%;
+  padding: 4%;
+}
+
+.content8 .container h1 {
+  font-size: 60px;
+  font-family: "Catamaran", sans-serif;
+  color: white;
+}
+
+.content8 .container p {
+  text-align: justify;
+  font-size: 20px;
+  color: white;
+  margin-top: 20px;
+}
+
+.content8 img {
+  width: 90%;
+}
+
+.content9 {
+  width: 75%;
+  margin-top: 5%;
+  padding: 2%;
+}
+
+.content9 h1 {
+  margin: 20px;
+  font-size: 60px;
+  font-family: "Catamaran", sans-serif;
+  color: white;
+  text-align: center;
+}
+
+.content9 .firstr {
+  margin-top: 5%;
+  padding: 5%;
+}
+
+.content9 .firstr .col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.content9 .firstr .col h2 {
+  font-size: 55px;
+  font-family: "Catamaran", sans-serif;
+  color: white;
+}
+
+.content9 .firstr .col p {
+  text-align: center;
+  font-size: 20px;
+  color: grey;
+  margin-top: 5px;
+}
+
+.content9 .secondr {
+  padding: 5%;
+}
+
+.content9 .secondr .col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.content9 .secondr .col h2 {
+  font-size: 55px;
+  font-family: "Catamaran", sans-serif;
+  color: white;
+}
+
+.content9 .secondr .col p {
+  text-align: center;
+  font-size: 20px;
+  color: grey;
+  margin-top: 5px;
+}
+/*# sourceMappingURL=styles.css.map */
